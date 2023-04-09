@@ -61,6 +61,7 @@ namespace PagesDowloader
             await using StreamWriter sw = new StreamWriter("page.http", false, Encoding.UTF8);
             await sw.WriteLineAsync(responseTextBlock.Text);
             sw.Close();
+            MessageBox.Show("Downloaded to your PC");
         }
     }
 }
